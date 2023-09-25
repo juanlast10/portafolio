@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>   
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link rel="stylesheet" href="./styles/header/header.css">
+          <link rel="stylesheet" href="./styles/habilidades/hablilidades.css">
+          <link rel="stylesheet" href="./styles/portafolio/portafolio.css">
+          <link rel="stylesheet" href="./styles/resumen/resumen.css">
+          <link rel="stylesheet" href="./styles/sobreMi/sobreMi.css">
+          <link rel="stylesheet" href="./styles/testimonio/testimonio.css">
+          <link rel="stylesheet" href="./styles/contacto/contacto.css">
+          <link rel="stylesheet" href="./styles/responsive/responsive.css">
+          <link rel="stylesheet" href="./html/portafolio.html">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="estilo.css" />
+    <title>CV JUAN SHEPARD</title>
+  </head>
+  <body>
+
+    <!-- SECCION INICIO -->
+    <section class="inicio" id="inicio">
+      <div class="contenido-seccion">
+        
+        <header>
+          <div>
+            <div class="nav-bar" onclick="mostrarOcultarMenu()">      
+            <i class="fa-solid fa-bars"></i>     
+          </div>
+          <nav id="nav" class="nav">
+              <a href="#inicio">Inicio</a>
+              <a href="#portafolio">Portafolio</a>   
+              <a href="#habilidades">Habilidades</a>
+              <a href="#resumen">Resumen</a>
+              <a href="#sobremi">Sobre mi</a>
+              <a href="#testimonios"></a>
+              <a href="#contacto">Contacto</a>
+            </nav>
+          </div>
+          
+          <div class="logo">J<span class="color">N</span></div>
+          <div class="dark-mode"> 
+             <input type="checkbox" name="" id="dark-mode-toggle">
+            <label for="dark-mode-toggle" id="label-toggle">
+                      <i class="fa-solid fa-moon fa-xl" style="color: #ffffff;"></i>
+            </label>
+          </div>
+        </header>
+        
+        <div class="info">
+          <h1>JUAN DAVID NARVAEZ</h1>
+          <h2>CODIFICADOR, DISEÑADOR, PROFESIONAL</h2>
+          <div class="redes">
+            <a href="https://twitter.com/"target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.youtube.com/"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://co.pinterest.com/"target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="foto">
+          <img src="img/fotojuan.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section class="portfolio section-padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <h2 class="titulo-seccion headline load-hidden" id="portafolio">
+            PORTAFOLIO
+          </h2>
+        </div>
+        <div class="row">
+          <div class="portfolio-filter">
+            <button type="button" class="active" data-filter="all">All</button>
+            <button type="button" data-filter="entregable">Entregables</button>
+            <button type="button" data-filter="proyecto">Proyectos</button>
+            <button type="button" data-filter="servicio">Servicios</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio-item portfolio-card" data-category="entregable"
+          data-link="https://proyecto-shopping-academlo.netlify.app/">
+            <div class="portfolio-item-inner">
+              <div class="portfolio-img">
+                <img src="./img/portfolio/shirt5_cnwq0w.png" alt="" />
+              </div>
+              <div class="portfolio-info">
+                <h4>Shopping Academlo</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card" data-category="entregable"
+          data-link="https://rick-and-morty-app-academlo.netlify.app/">
+            <div class="portfolio-item-inner">
+              <div class="portfolio-img">
+                <img src="./img/portfolio/morty3.jpg" alt="" />
+              </div>
+              <div class="portfolio-info">
+                <h4>Rick y Morty</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card" data-category="entregable"
+          data-link="https://galleta-de-la-fortuna-react.netlify.app/">
+            <div class="portfolio-item-inner"> 
+              <div class="portfolio-img">
+                <img src="./img/portfolio/galleta2.jpg" alt="" />
+              </div>
+              <div class="portfolio-info">
+                <h4>Galleta de la fortuna</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card" data-category="servicio"
+          data-link="https://www.facebook.com/">
+            <div class="portfolio-item-inner">
+              <div class="portfolio-img">
+                <img src="./img/portfolio/dragon-fly.gif" alt="" />
+              </div>
+              <div class="portfolio-info">
+                <h4>Dragon Fly</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card" data-category="proyecto"
+          data-link="https://twitter.com/?lang=es">
+            <div class="portfolio-item-inner">
+              <div class="portfolio-img">
+                <img
+                  src="./img/portfolio/Modern Monogram A Logo (9).gif"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-info">
+                <h4>Academlo</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card" data-category="servicio"
+          data-link="https://www.google.es/">
+            <div class="portfolio-item-inner">
+              <div class="portfolio-img">
+                <img src="./img/portfolio/epic-dragon.gif" alt="" />
+              </div>
+              <div class="portfolio-info">
+                <h4>Epic Dragon</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- SECCION HABILIDADES -->
+     <section class="habilidades" id="habilidades">
+      <div class="contenido-seccion">
+            <h2 class="titulo-seccion headline load-hidden">ESPECIALIZACION</h2>
+        <div class="fila">
+          <div class="col">
+            <span>HTML/CSS</span>
+            <div class="cont-barra">
+              <div class="barra" id="html">
+                <!-- mediante javascript luego generamos 17 barras con clase e -->  
+
+              </div>
+              <span>98%</span>
+            </div>
+          </div>
+                    <div class="col">
+            <span>JAVASCRIPT</span>
+            <div class="cont-barra">
+              <div class="barra" id="javascript">
+                <!-- mediante javascript luego generamos 17 barras con clase e -->  
+
+              </div>
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <span>WORDPRESS</span>
+            <div class="cont-barra">
+              <div class="barra" id="wordpress">
+                <!-- mediante javascript luego generamos 17 barras con clase e -->  
+ 
+              </div>
+              <span>90%</span>
+            </div>
+          </div>
+                    <div class="col">
+            <span>PHOTOSHOP</span>
+            <div class="cont-barra">
+              <div class="barra" id="photoshop">
+                <!-- mediante javascript luego generamos 17 barras con clase e -->  
+
+              </div>
+              <span>85%</span>
+            </div>
+          </div>
+        </div>
+                <div class="fila">
+          <div class="col">
+            <span>PHP</span>
+            <div class="cont-barra">
+              <div class="barra" id="php">
+                <!-- mediante javascript luego generamos 17 barras con clase e -->  
+
+              </div>
+              <span>95%</span>
+            </div>
+          </div>
+                    <div class="col">
+            <span>ILUSTRATOR</span>
+            <div class="cont-barra">
+              <div class="barra" id="ilustrator">
+                <!-- mediante javascript luego generamos 17 barras con clase e -->  
+
+              </div>
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- SECCION RESUMEN -->
+    <section class="resumen" id="resumen">
+      <div class="contenido-seccion">
+            <h2 class="titulo-seccion headline load-hidden">PREPARACION Y EXPERIENCIA</h2>
+        <div class="info">
+          <div class="col">
+            <span class="titulo">Educaciòn</span>
+            <table>
+              <tr>
+                <td class="datos">
+                  <h3>2012-2016</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ea ipsam tenetur a dolor error laboriosam minima perferendis odio optio necessitatibus
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Tnlgo en Automatizacion</h4>
+                  <p>Sena San Juan de Pasto</p>
+                  <span class="promedio">8.9 PG</span>
+                </td>
+              </tr>
+            </table>
+                        <table>
+              <tr>
+                <td class="datos">
+                  <h3>2023-2023</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ea ipsam tenetur a dolor error laboriosam minima perferendis odio optio necessitatibus
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Programador web full-stack</h4>
+                  <p>Academlo</p>
+                  <span class="promedio">8.9 PG</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+                    <div class="col">
+            <span class="titulo">Experiencia Laboral</span>
+            <table>
+              <tr>
+                <td class="datos">
+                  <h3>3 Años</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ea ipsam tenetur a dolor error laboriosam minima perferendis odio optio necessitatibus
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Ejercito</h4>
+                  <p>Programador Junior seguridad</p>
+                </td>
+              </tr>
+            </table>
+                        <table>
+              <tr>
+                <td class="datos">
+                  <h3>2 Años</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ea ipsam tenetur a dolor error laboriosam minima perferendis odio optio necessitatibus
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Diseñador Inc.</h4>
+                  <p>Diseñador Principal</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section class="sobremi" id="sobremi">
+      <div class="contenido-seccion">
+        <h2 class="titulo-seccion headline load-hidden">DETALLES PERSONALES</h2>
+        <p class="especial">
+          Me dedico al diseño y desarrollo de plataformas web
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          quibusdam incidunt cupiditate, veniam consequatur numquam eaque ipsam
+          facilis voluptate dicta amet, veritatis non quas deserunt explicabo!
+          Alias omnis doloremque mollitia.
+
+          <div class="fila">
+            <div class="col">
+              <i class="fa-solid fa-user"></i>
+              <span class="titulo-detalle">Perfil</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolore labore ratione optio, consectetur, fugiat laudantium ipsum dolorem animi debitis perferendis quae beatae accusamus similique</p>
+            </div>
+             <div class="col">
+             <i class="fa-solid fa-flag"></i>
+              <span class="titulo-detalle">Intereses</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolore labore ratione optio, consectetur, fugiat laudantium ipsum dolorem animi debitis perferendis quae beatae accusamus similique</p>
+            </div>
+                         <div class="col">
+             <i class="fa-solid fa-location-dot"></i>
+              <span class="titulo-detalle">Ubicacion</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolore labore ratione optio, consectetur, fugiat laudantium ipsum dolorem animi debitis perferendis quae beatae accusamus similique</p>
+            </div>
+          </div>
+        </p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios" id="testimonios">
+        <h2 class="titulo-seccion">Testimonios</h2>
+        <div class="division">
+            <div class="col col1">
+            </div>
+            <div class="col col2">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="titulo">
+               <h3>Mis <br> Clientes <span class="linea"></span></h3>
+            </div>
+            <div class="cliente">
+                <div class="contenedor-img">
+                    <img src="img/cliente1.png" alt="" id="imgCliente">
+                </div>
+                <button class="siguiente" onclick="siguiente()">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="opinion">
+                <h3 id="tituloCliente">Gran Trabajo!!!</h3>
+                <p id="txtCliente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis accusantium pariatur, soluta deserunt, natus praesentium delectus impedit eum ad molestias.</p>
+                <h4 id="nombreCliente">Mark S.</h4>
+                <p id="puestoCliente">CEO and WP Dev</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+    <div class="contenido-seccion">
+      <h3>Ponte en contacto ahora mismo|</h3>
+
+      <div class="fila">
+      <div class="col">
+        <h2>
+          <i class="fa-solid fa-phone"></i>Telefono
+        </h2>
+        <span class="info-contacto">57 - 3224956729</span>
+      </div>
+            <div class="col">
+        <h2>
+          <i class="fa-solid fa-envelope"></i>Correo
+        </h2>
+        <span class="info-contacto">jdnarvaez@udenar.edu.co</span>
+      </div>
+      <div class="col">
+        <h2>
+          <i class="fa-solid fa-globe"></i>Pagina web
+        </h2>
+        <span class="info-contacto">jdnarvaez.com</span>
+      </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox">
+      <div class="lightbox-content">
+        <div class="lightbox-close">&times;</div>
+        <img
+          src="./img/portfolio/shirt5_cnwq0w.png"
+          onclick="nextItem()"
+          class="lightbox-img"
+          alt=""
+        />
+        <div class="lightbox-caption">
+          <div class="caption-text"></div>
+          <div class="caption-counter"></div>
+        </div>
+      </div>
+      <div class="light-button">
+        <a
+          href="https://proyecto-shopping-academlo.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button>Ver Página</button></a
+        >
+      </div>
+      <div class="lightbox-controls">
+        <div class="prev-item" onclick="prevItem()">
+          <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="next-item" onclick="nextItem()">
+          <i class="fa fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

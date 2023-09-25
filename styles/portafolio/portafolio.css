@@ -1,0 +1,322 @@
+/* PORFOLIO */
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.text-aling {
+  text-align: center;
+}
+
+.row .titulo-seccion {
+  font-size: 4rem;
+  width: fit-content;
+  -webkit-text-stroke: 2px #ffffff;
+  position: relative;
+  transform: translateX(100px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  letter-spacing: 40px;
+  color: rgba(6, 2, 46, 0.925);
+}
+
+.portfolio {
+  background-color: var(--background-color);
+  padding: 180px 0 100px 0;
+  z-index: 100;
+}
+
+.portfolio .portfolio-filter {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio .portfolio-filter button {
+  text-transform: uppercase;
+  margin-top: -20px;
+  outline: none;
+  border: 1px solid;
+  border-color: #940253;
+  padding: 8px;
+  font-weight: 800;
+  border-radius: 5px;
+  background-color: #940253;
+  margin-right: 20px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-filter button:hover,
+.portfolio .portfolio-filter button.active {
+  color: #940253;
+  background-color: white;
+}
+
+.portfolio .portfolio-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .portfolio-item.hide {
+  display: none;
+}
+
+.portfolio .portfolio-item.show {
+  display: block;
+  animation: showItem 0.5s ease;
+}
+
+.portfolio .portfolio-item-inner {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+@keyframes showItem {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img{
+  width: 100%;
+  display: block;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  text-transform: capitalize;
+  transform: translateX(-20px);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info h4 {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-info .icon {
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #940253;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info .icon {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-info .icon .fa {
+  line-height: 40px;
+}
+
+.portfolio-card {
+  position: relative;
+  height: fit-content;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: rotateX(5deg) rotateY(10deg) rotateZ(1deg);
+}
+
+.portfolio-card:hover .info {
+  left: 0;
+}
+/* LIGHBOX MODAL */
+.lightbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  padding: 30px;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox .lightbox-content img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  min-width: 450px;
+  max-height: 500px;
+  cursor: pointer;
+  display: block;
+  padding: 40px 0 30px;
+}
+
+.lightbox .lightbox-content {
+  position: relative;
+}
+
+.lightbox.open .lightbox-content {
+  animation: lightboxImage .5s ease;
+}
+
+@keyframes lightboxImage
+{
+  0%
+  {
+      transform: scale(0.8);
+  }
+  100%
+  {
+      transform: scale(1);
+  }
+}
+
+.lightbox .lightbox-content .lightbox-close {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  right: 0;
+  font-size: 42px;
+  color: white;
+  line-height: 20px;
+  text-align: right;
+}
+
+.lightbox .lightbox-content .lightbox-caption {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: white;
+  z-index: -1;
+}
+
+.light-button button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid;
+  border-color: #940253;
+  padding: 8px;
+  font-weight: 800;
+  border-radius: 5px;
+  background-color: #940253;
+  margin-right: 20px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.light-button button:hover {
+  color: #940253;
+  background-color: white;
+}
+
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  top: 50%;
+  margin-top: -20px;
+  z-index: 110;
+  transition: all 0.3s ease;
+}
+
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .next-item:hover {
+  transform: scale(1.1);
+}
+
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active {
+  transform: scale(1);
+}
+
+.lightbox .lightbox-controls .prev-item {
+  left: 30px;
+}
+
+.lightbox .lightbox-controls .next-item {
+  right: 30px;
+}
+
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa {
+  font-size: 32px;
+  line-height: 40px;
+}

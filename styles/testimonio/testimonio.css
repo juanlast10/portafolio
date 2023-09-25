@@ -1,0 +1,125 @@
+/* TESTIMONIOS */
+/* ******** */
+.testimonios {
+  position: relative;
+  background-color: var(--background-color);
+  background-size: cover;
+  height: 100vh;
+  z-index: 100;
+}
+.testimonios .division {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+.testimonios .division .col {
+  width: 50%;
+}
+.testimonios .division .col2 {
+  background-color: var(--background-color);
+}
+.testimonios .fila {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+.testimonios .fila .titulo {
+  width: 40%;
+  font-size: 80px;
+  color: #fff;
+}
+.testimonios .fila .cliente {
+  width: 20%;
+}
+
+.testimonios .fila .cliente .contenedor-img {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+.testimonios .fila .cliente .contenedor-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.testimonios .fila .cliente .siguiente {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  border: none;
+  margin: auto;
+  position: relative;
+  font-size: 30px;
+  background-color: #ff3366;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.testimonios .fila .cliente .siguiente:hover {
+  background-color: #333;
+  color: #ff3366;
+}
+.testimonios .fila .opinion {
+  position: relative;
+  width: 40%;
+  color: #fff;
+  padding-left: 40px;
+}
+.testimonios .fila .opinion h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.testimonios .fila .opinion p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 35px;
+  color: #888888;
+}
+
+/* MENU DE NAVEGACION */
+
+.nav-menu {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.nav-menu a {
+  display: block;
+  text-decoration: none;
+  color: #fbfbfb;
+  font-size: 40px;
+  font-weight: bold;
+}
+.nav-menu a:hover {
+  color: #ff3366;
+}
+
+.nav-menu button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fbfbfb;
+  background-color: transparent;
+  color: #ff3366;
+  font-size: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nav-menu button:hover {
+  background-color: #ff3366;
+  color: #fff;
+}
